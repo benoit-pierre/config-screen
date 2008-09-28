@@ -1,0 +1,26 @@
+
+startup_message off
+
+msgwait 1
+nethack on
+vbell off
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{gk}$LOGNAME%{wk}@%{gk}%H%=%{w}%n %t%? %{b} %W%?%=%{r}%f %{w}%c"
+
+defscrollback 10000
+
+term $TERM
+termcapinfo xterm ti@:te@
+
+altscreen off
+
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# erase background with current bg color
+defbce "on" 
+
