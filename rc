@@ -1,7 +1,7 @@
 
 startup_message off
 
-msgwait 1
+msgwait 5
 nethack on
 vbell off
 
