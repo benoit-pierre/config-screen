@@ -7,7 +7,7 @@ vbell off
 
 hardstatus on
 hardstatus alwayslastline
-hardstatus string "%{gk}$LOGNAME%{wk}@%{gk}%H%=%{w}%n %t%? %{b} %W%?%=%{r}%f %{w}%c"
+hardstatus string "%{gk}$LOGNAME%{wk}@%{gk}%H%=%{b}%-Lw%{= kw}%50>%n* %t%{-}%+Lw%= %{r}%f %{w}%c"
 
 defscrollback 10000
 
