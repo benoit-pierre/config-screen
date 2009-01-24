@@ -1,8 +1,12 @@
 
 startup_message off
 
-msgwait 2
 nethack on
+
+# Notifications
+activity "Activity in window %n"
+bell_msg "Bell in window %n"
+msgwait 2
 vbell off
 
 hardstatus on
