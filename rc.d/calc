@@ -1,0 +1,5 @@
+source ~/.screen/rc
+
+screen -t calc 0 calc
+
+# vim: ft=screen
