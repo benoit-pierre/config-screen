@@ -1,0 +1,5 @@
+source ~/.screen/rc
+
+chdir ~/
+
+# vim: ft=screen
