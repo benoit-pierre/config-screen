@@ -15,19 +15,13 @@ hardstatus string "%{gk}$LOGNAME%{wk}@%{gk}%H%=%{b}%-Lw%{= kw}%50>%n* %t%{-}%+Lw
 
 defscrollback 10000
 
-term $TERM
-termcapinfo xterm ti@:te@
+term screen-256color-bce
+termcapinfo xterm* OP
+termcapinfo xterm* ti@:te@
+defbce on
 
 altscreen off
 
 deflogin off
-
-# terminfo and termcap for nice 256 color terminal
-# allow bold colors - necessary for some reason
-attrcolor b ".I"
-# tell screen how to set colors. AB = background, AF=foreground
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-# erase background with current bg color
-defbce "on" 
 
 # vim: ft=screen
