@@ -1,4 +1,4 @@
-source ~/.screen/rc
+source "$SCREENRC"
 
 screen -t calc 0 calc
 

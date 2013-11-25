@@ -1,4 +1,4 @@
-source ~/.screen/rc
+source "$SCREENRC"
 
 screen -t getmail 1 tail -f "$HOME/.getmail/log"
 screen -t sup 0 sup

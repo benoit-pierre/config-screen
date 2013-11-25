@@ -1,4 +1,5 @@
-source ~/.screen/rc
+source "$SCREENRC"
+
 screen -t ttyS5 1 miniterm 5 115200 8 1
 screen -t ttyS4 0 miniterm 4 115200 8 1
 

@@ -1,4 +1,4 @@
-source ~/.screen/rc
+source "$SCREENRC"
 
 chdir ~/
 
