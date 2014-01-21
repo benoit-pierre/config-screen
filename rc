@@ -15,7 +15,7 @@ hardstatus string "%{gk}$LOGNAME%{wk}@%{gk}%H%=%{b}%-Lw%{= kw}%50>%n* %t%{-}%+Lw
 
 defscrollback 10000
 
-term screen-256color-bce
+term xterm-scr-256color
 termcapinfo xterm* OP
 termcapinfo xterm* ti@:te@
 defbce on
